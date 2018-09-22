@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.test.StudentEntity" table="student" schema="student">
+        <id name="stuno" column="STUNO">
+            <generator class="native"/>
+        </id>
+        <property name="stunam" column="STUNAM"/>
+        <property name="sex" column="SEX"/>
+        <property name="cource" column="COURCE"/>
+        <property name="grade" column="GRADE"/>
+    </class>
+</hibernate-mapping>
